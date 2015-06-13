@@ -1,8 +1,21 @@
 # git-ignore
 A git extenstion to make .gitignore file
 
+Support
+====
+
+* Mac
+
+* Debian
+
+* RedHat
+
 Installation
 ====
+
+###Caution
+Install script must run in root!
+
 
 #####Dependency
 * curl
@@ -17,7 +30,6 @@ bash <(curl -sL https://raw.github.com/Luavis/git-ignore/master/install.sh)
 ```
 bash <(wget -qO- https://raw.github.com/Luavis/git-ignore/master/install.sh)
 ```
-
 
 How to use
 ====
@@ -90,4 +102,4 @@ How to use
 Ignore files origin
 ====
 
-[github's gitignore](https://github.com/github/gitignore)
+[Github's gitignore repo](https://github.com/github/gitignore)
