@@ -9,6 +9,7 @@
 #
 # @author Luavis.
 # @date 2015.06.13
+# @license MIT LICENSE
 #
 ###########################################################################
 
@@ -26,7 +27,7 @@ git_ignore=".gitignore"
 BASEDIR=$(dirname $0)
 
 # get ignore files
-git_ignore_files=( $(for DIRS in $(find $BASEDIR/gitignore -name "*.gitignore" -type f ); do echo $DIRS; done) ) 
+git_ignore_files=( $(for DIRS in $(find $BASEDIR/../share/git-ignore -name "*.gitignore" -type f ); do echo $DIRS; done) ) 
 
 # basename supports for user
 support=( $(for ig_file in ${git_ignore_files[@]}; do ig_file=${ig_file##*/}; echo ${ig_file%.gitignore} | tr [:upper:] [:lower:]; done) )
