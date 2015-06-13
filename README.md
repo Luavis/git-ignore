@@ -1,6 +1,24 @@
 # git-ignore
 A git extenstion to make .gitignore file
 
+Installation
+====
+
+#####Dependency
+* curl
+* git
+
+#####Via curl
+```
+bash <(curl -sL https://raw.github.com/Luavis/git-ignore/master/install.sh)
+```
+
+#####Via wget
+```
+bash <(wget -qO- https://raw.github.com/Luavis/git-ignore/master/install.sh)
+```
+
+
 How to use
 ====
 
