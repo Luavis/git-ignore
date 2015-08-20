@@ -151,18 +151,7 @@ main() {
     print_help
   elif [ $1 = 'help' -o $1 = '-h' -o $1 = '--help' ]; then
     print_help
-  elif [ $1 = 'rm' -o $1 = 'remove' ]; then
-    while true; do
-      print_bold "Do you really want to remove git ignore?(Y/n) : "
-      read -p "" yn
-
-      case $yn in
-          [Y]* ) rm -f $git_ignore; break;;
-          [Nn]* ) exit;break;;
-          * ) echo "Please answer Y(yes) or n(no).";;
-      esac
-    done
-  elif [ $1 = 'm' -o $1 = 'make' ]; then
+  elif [[ $# -ge 1 ]]; then
     make_ignore_file "$@"
   else
     print_help
