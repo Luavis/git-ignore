@@ -35,7 +35,7 @@ How to use
 ====
 
 #####Usage:
-  git ignore <actions>
+  git ignore <languages|enviroments|IDEs>
 
 #####Options:
   rm, [remove]              remove git ignore file
