@@ -123,9 +123,22 @@ make_ignore_file() {
   
   echo
 
+  while true; do
+    print_bold "Do you want to ignore .gitignore?(Y/N) : "
+
+    read -p "" yn
+
+    case $yn in
+        [Y]* ) "$output_file_content\n\n#ignore .gitignore file
+        self\n.gitignore"; break;;
+        [Nn]* ) break;;
+        * ) echo "Please answer Y(yes) or n(no).";;
+    esac
+  done
+
   if [[ -f $git_ignore ]]; then
     while true; do
-        
+
       echo_bold "Git ignore file already exists."
       print_bold "Do you want overwrite git ignore?(Y/n) : "
       read -p "" yn
