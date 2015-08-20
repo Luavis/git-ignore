@@ -51,11 +51,7 @@ print_support() {
 
 print_help() {
   echo_bold "\033[1mUsage\033[0m:"
-  echo "  git ignore <actions>"
-  echo
-  echo_bold "Options:"
-  printf "  \033[1m%-25s\033[0m %-25s\n" "rm, [remove]" "remove git ignore file"
-  printf "  \033[1m%-25s\033[0m %-25s\n" "make, [make]" "<ignore-types> make git ignore file with types"
+  echo "  git ignore <languages|enviroments|IDEs>"
   echo
   print_support
   echo 
