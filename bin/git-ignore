@@ -80,7 +80,7 @@ make_ignore_file() {
   pasted_lang=() 
   target_lang=( "$@" )
 
-  ignore_git="#ignore .gitignore file self"$'\n'".gitignore"
+  ignore_git=".gitignore"
 
   target_lang_len=${#target_lang[@]}
 
